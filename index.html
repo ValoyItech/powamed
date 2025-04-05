@@ -1,78 +1,263 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="icon" type="image/png" href="logo.png">
-    <meta property="og:title" content="Powamed - Coming Soon">
-    <meta property="og:description" content="We are working on something amazing. Stay tuned!">
-    <meta property="og:image" content="logo.png">
-    <meta property="og:url" content="https://powamed.co.za">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Powamed - Coming Soon</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #f4f4f4;
-            color: #333;
-            padding: 50px;
-        }
-        .container {
-            max-width: 600px;
-            margin: auto;
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        .logo {
-            max-width: 150px;
-            margin-bottom: 20px;
-        }
-        h1, h2 {
-            color: #0056b3;
-        }
-        .contact {
-            margin-top: 20px;
-            padding-top: 10px;
-            border-top: 2px solid #ddd;
-        }
-        .contact p {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-        }
-        .contact i {
-            color: #0056b3;
-        }
-    </style>
-</head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="PowaMed is a leading medical equipment supplier in South Africa, providing high-quality healthcare solutions to both public and private sectors." />
+        <meta name="keywords" content="medical equipment, healthcare solutions, medical supplies, PowaMed, South Africa" />
+        <meta name="author" content="PowaMed" />
+        <meta name="robots" content="index, follow" />
+        <meta property="og:title" content="PowaMed - Medical Equipment Supplier" />
+        <meta property="og:description" content="PowaMed is a leading medical equipment supplier in South Africa, providing high-quality healthcare solutions to both public and private sectors." />
+        <meta property="og:image" content="images/logo.png" />
+        <meta property="og:url" content="https://www.powamed.co.za" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="PowaMed - Medical Equipment Supplier" />
+        <meta name="twitter:description" content="PowaMed is a leading medical equipment supplier in South Africa, providing high-quality healthcare solutions to both public and private sectors." />
+        <meta name="twitter:image" content="images/logo.png" />
+        <title>PowaMed - Medical Equipment Supplier</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600&family=Roboto&display=swap" rel="stylesheet">
+        <link rel="apple-touch-icon" sizes="180x180" href="images/logo.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/logo.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="images/logo.png">
+        <link rel="manifest" href="images/logo.png">
+        <link rel="mask-icon" href="images/logo.png" color="#e60000">
+        <meta name="msapplication-TileColor" content="#e60000">
+        <meta name="theme-color" content="#ffffff">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+      </head>
 <body>
-    <div class="container">
-        <img src="logo.png" alt="Powamed Logo" class="logo">
-        <h1><span style="color:#0056b3;">Powa</span><span style="color:red;">Med</span></h1>
-        <h2>Website Coming Soon</h2>
-        <p>We are working on something amazing. Stay tuned!</p>
-        
-        <div class="contact">
-            <h3>Contact Us</h3>
-            <p><i class="fas fa-envelope"></i> sales@powamed.co.za | technical@powamed.co.za | finance@powamed.co.za</p>
-            <p><i class="fas fa-phone"></i> 010 035 0177 | 078 090 1750</p>
-            <p><i class="fas fa-map-marker-alt"></i> Unit 121 Lilyfield, Noordwyk, Midrand 1687</p>
+  <!-- Sidebar & Header -->
+  <header>
+    <div class="menu-toggle" id="menu-toggle">
+      <i class="fas fa-bars"></i>
+    </div>
+    <img src="images/logo.png" alt="PowaMed Logo" class="logo">
+    <span class="company-name"><span class="powa">Powa</span><span class="med">Med</span></span>
+  </header>
+
+  <nav id="sidebar">
+    <div class="sidebar-header">
+      <span class="powa">Powa</span><span class="med">Med</span>
+    </div>
+    <ul>
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#products">Products</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <div id="overlay"></div>
+
+  <!-- Hero Section -->
+  <!-- Hero Section -->
+<section id="hero" class="hero-slider">
+    <div class="slide" style="background-image: url('images/slide1.jpg')">
+      <div class="slide-text">
+        <h1 data-aos="fade-up">Reliable Medical Equipment</h1>
+        <button class="quote-btn"><a href="#contact">Get a Quote</a></button>
+      </div>
+    </div>
+    <div class="slide" style="background-image: url('images/slide2.jpg')">
+      <div class="slide-text">
+        <h1 data-aos="fade-up">Serving Public & Private Sector</h1>
+        <button class="quote-btn"><a href="#contact">Get a Quote</a></button>
+      </div>
+    </div>
+    <div class="slide" style="background-image: url('images/slide3.jpg')">
+      <div class="slide-text">
+        <h1 data-aos="fade-up">Nationwide Delivery</h1>
+        <button class="quote-btn"><a href="#contact">Get a Quote</a></button>
+      </div>
+    </div>
+    <div class="slide" style="background-image: url('images/slide4.jpg')">
+      <div class="slide-text">
+        <h1 data-aos="fade-up">Quality Assured Products</h1>
+        <button class="quote-btn"><a href="#contact">Get a Quote</a></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Us -->
+  <section id="about">
+    <div class="about-container">
+        <h2 class="section-title" data-aos="fade-up">About Us</h2>
+        <p class="about-text">
+            PowaMed is a proudly South African medical equipment supplier with years of experience in delivering top-quality healthcare solutions to both the public and private sectors. We specialize in a broad range of medical categories that meet international standards. Our expertise includes:
+        </p>
+  
+      <div class="category-slider">
+        <div class="category-track" id="categoryTrack">
+          <div class="category-item">
+            <i class="fas fa-syringe"></i>
+            <p>Single-use devices like syringes and catheters to ensure sterile, disposable solutions for patient safety.</p>
+          </div>
+          <div class="category-item">
+            <i class="fas fa-bone"></i>
+            <p>Implantables such as hip prostheses and pacemakers that support long-term patient recovery and mobility.</p>
+          </div>
+          <div class="category-item">
+            <i class="fas fa-x-ray"></i>
+            <p>Imaging equipment including ultrasound and CT scanners to deliver precise diagnostics.</p>
+          </div>
+          <div class="category-item">
+            <i class="fas fa-procedures"></i>
+            <p>Medical equipment like anesthesia machines, patient monitors, and hemodialysis machines for high-performance care.</p>
+          </div>
+          <div class="category-item">
+            <i class="fas fa-laptop-medical"></i>
+            <p>Software solutions for computer-aided diagnostics and enhanced healthcare workflow.</p>
+          </div>
+          <div class="category-item">
+            <i class="fas fa-vials"></i>
+            <p>In vitro diagnostics including glucometers and HIV tests for rapid, reliable results.</p>
+          </div>
+          <div class="category-item">
+            <i class="fas fa-head-side-mask"></i>
+            <p>Personal protective equipment: masks, gowns, gloves, and more for staff and patient safety.</p>
+          </div>
+          <div class="category-item">
+            <i class="fas fa-flask"></i>
+            <p>Surgical and laboratory instruments built for precision and reliability.</p>
+          </div>
+          <div class="category-item">
+            <i class="fas fa-tools"></i>
+            <p>Technical support, service, and repairs to maintain uninterrupted operation of medical equipment.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Products -->
+  <section id="products" class="section">
+    <h2 class="section-title" data-aos="fade-up">Products</h2>
+    <div class="product-grid">
+        <div class="product" data-aos="flip-up"><img src="images/1.jpg" alt="Syringe"><p>Single-use Devices</p></div>
+        <div class="product" data-aos="flip-up"><img src="images/2.jpg" alt="Implant"><p>Implantables</p></div>
+        <div class="product" data-aos="flip-up"><img src="images/3.jpg" alt="CT Scanner"><p>Imaging</p></div>
+        <div class="product" data-aos="flip-up"><img src="images/4.jpg" alt="Monitor"><p>Medical Equipment</p></div>
+        <div class="product" data-aos="flip-up"><img src="images/5.jpg" alt="Diagnostics"><p>Software</p></div>
+        <div class="product" data-aos="flip-up"><img src="images/6.jpg" alt="Glucometer"><p>In Vitro Diagnostics</p></div>
+        <div class="product" data-aos="flip-up"><img src="images/7.jpg" alt="PPE"><p>Protective Equipment</p></div>
+        <div class="product" data-aos="flip-up"><img src="images/8.jpg" alt="Surgical"><p>Surgical Instruments</p></div>
+        <div class="product" data-aos="flip-up"><img src="images/9.jpg" alt="Service"><p>Tech Support</p></div>
+        <div class="product" data-aos="flip-up"><img src="images/10.jpg" alt="PPE"><p>Hemodialysis Machines</p></div>
+        <div class="product" data-aos="flip-up"><img src="images/11.jpg" alt="Surgical"><p>HIV Tests</p></div>
+        <div class="product" data-aos="flip-up"><img src="images/12.jpg" alt="Service"><p>Pregnancy Tests</p></div>
+      </div>      
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2 class="section-title" data-aos="fade-up">Contact Us</h2>
+    <div class="contact-container">
+        <div class="contact-info">
+            <div class="addresses">
+                <div>
+                    <i class="fas fa-warehouse"></i>
+                    <strong>Warehouse:</strong><br/> 
+                    ERF 85, R81<br/>
+                    Mphambo Village, Malamulele 0982
+                </div>
+                <div>
+                    <i class="fas fa-building"></i>
+                    <strong>Midrand Branch:</strong><br/> 
+                    Unit 121 Lilyfield<br/>
+                    Noordwyk, Midrand 1687
+                </div>
+                <div>
+                    <i class="fas fa-building"></i>
+                    <strong>Cape Town Branch:</strong><br/> 
+                    03 Blaauwklippen Close<br/>
+                    Buh Rein Estate, 7570
+                </div>
+            </div>
+            <div class="contact-details">
+                <div>
+                    <i class="fas fa-envelope"></i>
+                    <strong>Emails:</strong><br/>
+                    sales@powamed.co.za | technical@powamed.co.za | finance@powamed.co.za
+                </div>
+                <div>
+                    <i class="fas fa-phone"></i>
+                    <strong>Phones:</strong><br/>
+                    010 035 0177 | 078 090 1750
+                </div>
+            </div>
+        </div>
+        <div class="quote-form-container">
+            <form id="quote-form" data-aos="fade-up">
+                <div class="form-group">
+                    <input type="text" name="full_name" placeholder="Full Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Email Address" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" name="phone" placeholder="Phone Number" required>
+                </div>
+                <div class="form-group">
+                    <textarea name="requirements" placeholder="Product Requirements" rows="5" required></textarea>
+                </div>
+                <button type="submit">Submit Request</button>
+            </form>
         </div>
     </div>
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            document.querySelector(".container").style.opacity = 0;
-            setTimeout(() => {
-                document.querySelector(".container").style.transition = "opacity 1.5s";
-                document.querySelector(".container").style.opacity = 1;
-            }, 500);
-        });
-    </script>
+    <div class="maps">
+        <iframe src="https://www.google.com/maps?q=ERF+85+Mphambo&output=embed"></iframe>
+        <iframe src="https://www.google.com/maps?q=121+Lilyfield+Noordwyk&output=embed"></iframe>
+        <iframe src="https://www.google.com/maps?q=03+Blaauwklippen+Buh+Rein+Cape+Town&output=embed"></iframe>
+    </div>
+</section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-logo">
+        <span class="powa">Powa</span><span class="med">Med</span>
+      </div>
+      <p>&copy; 2025 PowaMed. All rights reserved | By 
+        <a href="https://www.valoyitech.co.za/" target="_blank">Hector Baloyi</a>
+    </p> 
+    </div>
+  </footer>
+
+  <!-- WhatsApp Float -->
+  <a href="https://wa.me/27780901750" class="whatsapp-float" target="_blank">
+    <i class="fab fa-whatsapp"></i> Get in Touch
+  </a>
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script>
+    AOS.init();
+
+    (function() {
+        emailjs.init("UqbsppwXyCrJB9nQO"); // Your public key
+    })();
+
+    document.getElementById("quote-form").addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    emailjs.send("service_r4llrtp", "template_7987bxv", {
+        full_name: this.full_name.value,
+        email: this.email.value,
+        phone: this.phone.value,
+        requirements: this.requirements.value,
+        reply_to: this.email.value,  // Ensures you can reply directly to the sender
+        from_name: "Quote Request"   // This makes it show as 'Quote Request' in the inbox
+    }).then(function(response) {
+        alert("Request sent successfully!");
+        document.getElementById("quote-form").reset();
+    }, function(error) {
+        alert("Failed to send request. Please try again.");
+    });
+});
+  </script>
 </body>
 </html>
