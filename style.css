@@ -888,9 +888,7 @@
     .category-item {
       min-width: 80%;
     }
-    .category-track {
-      animation: none;
-    }
+    
     .category-item {
       margin: 0 auto;
     }
